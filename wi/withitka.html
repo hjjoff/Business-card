@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stile.css">
+    <title>Моя визитка</title>
+    <style>
+        body{
+            animation: body 30s infinite 1s ease-in-out;
+        }
+        
+        .q{
+            width: 800px;
+            height: 300px;
+            background-color: darkcyan;
+            position: absolute;
+            left: 550px;
+            border-radius: 80px;
+        }
+        .t{
+            width: 800px;
+            height: 200px;
+            background-color: rgb(1, 136, 23);
+            position: absolute;
+            left: 550px;
+            top: 450px;
+            border-radius: 80px;
+            animation: collage 9s infinite 2s ease-in-out;
+
+        }
+        .e{
+            width: 800px;
+            height: 200px;
+            background-color: greenyellow;
+            position: absolute;
+            top: 750px;
+            left: 550px;
+            border-radius: 80px;
+            animation: collage 10s infinite 3s ease-in-out;
+        }
+        .sv{
+            width: 800px;
+            height: 400px;
+            background-color: indianred;
+            position: absolute;
+            top: 1000px;
+            left: 550px;
+            border-radius: 80px;
+            animation: collage 11s infinite 4s ease-in-out;
+        }
+
+        @keyframes collage {
+            10% {background-color: rgb(90, 226, 174)}
+            20%{background-color: rgb(0, 238, 255);}
+            50%{background-color: rgb(119, 112, 216);}
+            
+
+            
+        }
+        @keyframes body{
+            10%{background-color: rgb(63, 116, 4);}
+            50%{background-color: rgb(96, 187, 6);}
+            80%{background-color: lawngreen;}
+        }
+
+        .q {
+            animation: collage 8s infinite 1s ease-in-out;
+        
+        }
+       
+    </style>
+</head>
+<body>
+    <script>
+        function help(){
+            alert("Тут вы можете ознакрмиться с творчиством автора.")
+        }
+    </script>
+    <form name="da">
+        <button onclick="help();">Что за сайт?</button>
+    </form>
+    <div class="D"></div>
+    <div class="q">
+        <center><h1>Моя визитка</h1>
+        <p><font size='+1'><strong>Я Журин Максим, мне 12 лет. Я живу в г.Обнинск. Занимаюсь плаванием 5 лет.</strong></font></p>
+        <img src="hgh.png" width="120px" height="170px"></center>
+    </div>
+    <div class="t"><center><h2>На каких курсах я учился в Технолабе.</h2>
+        <table border="2">
+            <tr>
+                <td>Название</td>
+                <td>Статус</td>
+                <td>Года</td>
+            </tr>
+            <tr>
+                <td>Python для начинающих</td>
+                <td>Закончин</td>
+                <td>2020-2021</td>
+            </tr>
+            <tr>
+                <td>Unity в VR</td>
+                <td>Окончен не полностью</td>
+                <td>2021-2022</td>
+            </tr>
+            <tr>
+                <td>Web-програмирование</td>
+                <td>Идет</td>
+                <td>2022-2023</td>
+            </tr>
+        
+        </table></center></div>
+        <div class="e">
+            <center><h2>Мои увлечения.</h2></center>
+            <ul>
+                <li>Играть в компьютерные игры</li>
+                <li>Погулять с другом</li>
+                <li>Спать</li>
+            </ul>
+            
+        </div>
+        <div class="sv">
+            <center>
+            <h1>Связаться со мной</h1>
+            <form>
+                <label for="tel">Телефон</label>
+                <input type="tel" placeholder="Введите номер телефона" name="tel" id="tel">
+                <label for="email">Почта</label>
+                <input type="email" placeholder="Введите свою почту" name="email" id="email">
+                <br>
+                <br>
+                <label for="coobwenie">Оставить сообщение</label>
+                <br>
+                <textarea name="coobwenie" id="coobwenie" cols="30" rows="10"></textarea>
+    
+                <button>Отправить</button>
+                </form>
+            </center>
+        </div>
+    
+</body>
+</html>
